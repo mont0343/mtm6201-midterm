@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importing the required fonts --> 
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Bella Onojie • Home</title>
+</head>
+
+<body>
+
+    <!-- Accessibility skip links, DESKTOP ONLY -->
+    <ul class="skip-links-home">
+        <li><a href="#howitworks">SKIP TO HOW THE APP WORKS</a></li>
+        <li><a href="#hero-image2">SKIP TO DOWNLOAD</a></li>
+    </ul>
+    
+    <!-- Universal header used across all pages --> 
+    <header role="banner" itemscope itemtype="https://schema.org/Organization">  
+        <a href="index.html" aria-label="Go to the homepage"><img src="images/mobile/companylogo_mobile.png" alt="our companies small logo" id="cl-mbl" itemprop="logo"></a>
+        <a href="index.html" aria-label="Go to the homepage"><img src="images/desktop/companylogo_desktop.png" alt="our companies large logo" id="cl-dsk" itemprop="logo"></a>
+
+        <!-- Navigation used for desktop screens -->
+        <nav role="navigation" class="desktop-nav">
+            <ul>
+                <li><a href="index.html" aria-label="Go to the homepage">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="faq.html" aria-label="Go to the faq page">FAQ</a></li>
+                <li><a href="contact.html" aria-label="Go to the contact page">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navigation used for mobile screens (hamburger menu) -->
+        <nav role="navigation" class="mobile-nav">
+            <input id="menu__toggle" type="checkbox"/>
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            
+            <ul class="menu-box">
+                <li><a class="menu__item" href="index.html" aria-label="Go to the homepage">Home</a></li>
+                <li><a class="menu__item" href="#">Product</a></li>
+                <li><a class="menu__item" href="faq.html" aria-label="Go to the faq page">FAQ</a></li>
+                <li><a class="menu__item" href="contact.html" aria-label="Go to the contact page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content relevant only to this page begins -->
+    <main role="main">  
+        <img src="images/desktop/hero_banner.png" alt="a banner image of some food" id="hero-image1">
+        
+        <!-- Hero Banner #1 -->
+        <div class="hero-home" itemscope itemtype="https://schema.org/Product"> 
+            <h3>Food app</h3>
+            <h1>Why stay hungry when you can order from Bella Onojie</h1>
+            <h4>Download the bella onoje's food app now on</h4>
+            <a href="#" class="button-hero1" id="hero1-playstore" aria-label="Visit the playstore to download our app">Playstore</a>
+            <a href="#" class="button-hero2" id="hero1-appstore" aria-label="Visit the app store to download our app">App store</a>
+        </div>
+        
+        <img id="hero-image2-mbl" src="images/mobile/hero_phones.png" alt="a picture of 2 iPhones">
+        <img id="hero-image2-dsk" src="images/desktop/dsk_hero-phones.png" alt="a large picture of 2 iPhones">
+        
+        <div class="container">
+        
+            <!-- How the app works -->
+            <hr class="dsk-divider" id="howitworks">
+            <div class="how-it-works">
+                <p>How the app works</p>
+            </div>
+            <hr class="mbl-divider">
+                
+            <!-- Create an account -->
+            <section class="create-account">
+                <div class="create-account-txt">
+                    <h3>Create an account</h3>
+                    <h2>Create/login to an existing account to get started</h2>
+                    <h4>An account is created with your email and a desired password.</h4>
+                </div>   
+                <img src="images/mobile/create_account_phone.png" alt="a picture of an iPhone using our app">
+            </section> 
+
+            <!-- Explore varieties -->
+            <section class="explore-varieties">
+                <div class="explore-varieties-txt">
+                    <h3>Explore varieties</h3>
+                    <h2>Shop for your favorite meal as e dey hot</h2>
+                    <h4>Shop for your favorite meals or drinks and enjoy while doing it.</h4>
+                </div>    
+                <img src="images/mobile/explore_varieties_phone.png" alt="a picture of an iPhone using our app">
+            </section> 
+    
+            <!-- Checkout -->
+            <section class="checkout">
+                <div class="checkout-txt">
+                    <h3>Checkout</h3>
+                    <h2>When you're done check out and get it delivered</h2>
+                    <h4>When you're done, check out and get it delivered with ease.</h4>
+                </div>    
+                <img src="images/mobile/checkout_phone.png" alt="a picture of an iPhone using our app">
+            </section> 
+        </div>
+
+        <!-- Hero Banner #2 -->
+        <img src="images/desktop/hero_banner2.png" alt="a banner image of some food" id="hero-image2">
+        <div class="hero-home2" role="complementary" itemscope itemtype="https://schema.org/Product"> 
+            <h2>Download the app now.</h2>
+            <h4>Available on your favourite store. Start your premium experience now</h4>
+            <div class="hero-buttons-bottom">
+                <a href="#" class="button-hero3" id="hero2-playstore" aria-label="Visit the playstore to download our app">Playstore</a>
+                <a href="#" class="button-hero4" id="hero2-appstore" aria-label="Visit the appstore to download our app">App store</a>
+            </div>
+        </div>
+    </main>
+    <!-- Content relevant only to this page ends -->
+
+    <!-- Universal footer used across all pages -->
+    <footer class="footer" role="contentinfo" itemscope itemtype="https://schema.org/Organization">   
+        <a href="index.html" aria-label="Go to the homepage"><img src="images/desktop/companylogo_desktop.png" alt="our companies logo" id="cl-footer" itemprop="logo"></a>
+        <a href="#" aria-label="Visit our twitter page"><img src="images/mobile/twitter_mobile.png" alt="twitters social media icon" id="tw-mbl"></a>
+        <a href="#" aria-label="Visit our facebook page"><img src="images/mobile/facebook_mobile.png" alt="facebooks social media icon" id="fa-mbl"></a>
+        <a href="#" aria-label="Visit our instagram page"><img src="images/mobile/instagram_mobile.png" alt="instagrams social media icon" id="in-mbl"></a>
+        <a href="#" aria-label="Visit our twitter page"><img src="images/desktop/twitter_desktop.png" alt="twitters social media icon" id="tw-dsk"></a>
+        <a href="#" aria-label="Visit our facebook page"><img src="images/desktop/facebook_desktop.png" alt="facebooks social media icon" id="fa-dsk"></a>
+        <a href="#" aria-label="Visit our instagram page"><img src="images/desktop/instagram_desktop.png" alt="instagrams social media icon" id="in-dsk"></a>
+        <p itemprop="brand">Copyright 2020 Bella Onojie.com</p>
+        
+        <!-- Accessibility skip link (Back to top), DESKTOP ONLY -->
+        <ul class="skip-link2">
+            <li><a href="#">BACK TO TOP</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
