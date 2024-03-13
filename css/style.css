@@ -1,0 +1,1554 @@
+@media only screen and (max-width:430px){  /*--------------- MOBILE ---------------*/
+
+/*--------------- MOBILE • HOME ---------------*/
+/*---- CONTAINER, HEADER & NAV ----*/
+.container{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header{
+    height: 110px;
+    background-color: white;
+    padding-bottom: 90px;
+    font-family: "Montserraf", sans-serif;
+}
+
+.desktop-nav{
+    display: none;
+}
+
+#cl-mbl{
+    position: absolute;
+    top: -3px;
+    left: -15px;
+    transform: scale(0.6);
+}
+  
+#cl-dsk{
+    display: none;
+}
+
+ #menu__toggle{      /* These last entries are for the hamburger menu on mobile, credit goes to the original creator */
+    opacity: 0;      /* https://codepen.io/andreykrokhin/pen/mGEqja?editors=1100 */
+}                    
+  
+#menu__toggle:checked ~ .menu__btn > span{
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before{  /* Here is the first set of animation/s required (used for the hamburger menu - no 'animation' property here) */
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu-box{
+    visibility: visible;
+    left: 0;
+}
+  
+.menu__btn{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    left: 380px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+  
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ABABAB;
+    transition-duration: .25s;
+}
+
+.menu__btn > span::before{
+    content: '';
+    top: -8px;
+}
+
+.menu__btn > span::after{
+    content: '';
+    top: 8px;
+}
+  
+.menu-box{
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #FA4A0C;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+    z-index: 2;
+}
+  
+.menu__item{
+    display: block;
+    padding: 22px 24px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.menu__item:hover{
+    background-color: #252B42;
+}
+
+.skip-links-home{
+    display: none;
+}
+
+/*---- HERO BANNER #1 ----*/
+#hero-image1{
+    display: none;
+}
+
+#hero-image2-dsk{
+    display: none;
+}
+
+.hero-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero-home h3{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #737373;
+    padding-bottom: 20px;
+}
+
+.hero-home h1{
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: #252B42;
+    padding-bottom: 30px;
+    line-height: 1.25;
+}
+
+.hero-home h4{
+    font-size: 1.6rem;
+    color: #737373;
+    padding-bottom: 60px;
+    font-weight: 450;
+}
+
+.button-hero1{
+    background-color: #FA4A0C;
+    border: none;
+    color: white;
+    padding: 20px 53px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+    border-radius: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.button-hero1:hover{
+    background-color: #cf3904;
+}
+
+.button-hero2{
+    background-color: white; 
+    border: 1px solid;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    color:#FA4A0C;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+#hero1-playstore{
+    text-decoration: none;
+    color: white;
+}
+
+#hero1-appstore{
+text-decoration: none;
+color: #FA4A0C;
+}
+
+#hero-image2-mbl{
+    position: relative;
+    top: -140px;
+    left: -153px;
+    transform: scale(0.8);
+    margin-bottom: -200px;  
+}
+
+/*---- HOW THE APP WORKS ----*/
+.how-it-works{
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.how-it-works p{
+    font-weight: 600;
+    font-size: 1.75rem;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.mbl-divider{
+    border-top: 3px solid #8c8b8b;
+    opacity: 20%;
+}
+
+.dsk-divider{
+   display: none; 
+}
+
+/*---- CREATE AN ACCOUNT ----*/
+.create-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.create-account h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: #FA4A0C;
+}
+
+.create-account h2{
+    font-weight: bold;
+    font-size: 2.25rem;
+    align-items: center;
+    padding-bottom: 55px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 1.5;
+    color: #252B42;
+}
+
+.create-account h4{
+    font-weight: 450;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-bottom: 40px;
+    color: #737373;
+    padding-left: 80px;
+    padding-right: 80px;
+    line-height: 1.5;
+}
+
+.create-account img{
+    margin-top: -100px;
+    margin-left: 115px;
+}
+
+/*---- EXPLORE VARIETIES ----*/
+.explore-varieties{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -100px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.explore-varieties h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-bottom: 40px;
+    color: #FA4A0C;
+}
+
+.explore-varieties h2{
+    font-weight: bold;
+    font-size: 2.25rem;
+    align-items: center;
+    padding-bottom: 55px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 1.5;
+    color: #252B42;
+}
+
+.explore-varieties h4{
+    font-weight: 450;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-bottom: 40px;
+    color: #737373;
+    padding-left: 80px;
+    padding-right: 80px;
+    line-height: 1.5;
+}
+
+.explore-varieties img{
+    margin-top: -130px;
+    margin-left: 115px;
+}
+
+/*---- CHECKOUT ----*/
+.checkout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -105px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.checkout h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-bottom: 40px;
+    color: #FA4A0C;
+}
+
+.checkout h2{
+    font-weight: bold;
+    font-size: 2.25rem;
+    align-items: center;
+    padding-bottom: 55px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 1.5;
+    color: #252B42;
+}
+
+.checkout h4{
+    font-weight: 450;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-bottom: 40px;
+    color: #737373;
+    padding-left: 80px;
+    padding-right: 80px;
+    line-height: 1.45;
+}
+
+.checkout img{
+    margin-top: -125px;
+    margin-left: 85px;
+}
+
+/*---- HERO BANNER #2 ----*/
+#hero-image2{
+    display: none;
+}
+
+.hero-home2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #252B42;
+    flex-direction: column;
+    margin-top: -60px;
+    padding-bottom: 110px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero-home2 h2{
+    padding-top: 125px;
+    padding-bottom: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 1.5;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.hero-home2 h4{
+    font-weight: 450;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-bottom: 40px;
+    color: #737373;
+    padding-left: 80px;
+    padding-right: 80px;
+    line-height: 1.5;
+}
+
+.button-hero3{
+    background-color: #FA4A0C;
+    border: none;
+    color: white;
+    padding: 20px 30px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button-hero3:hover{
+    background-color: #cf3904;
+}
+
+.button-hero4{
+    background-color: #252B42; 
+    border: 1px solid;
+    color: white;
+    padding: 20px 50px;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color:white;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#hero2-playstore, #hero2-appstore{
+    text-decoration: none;
+    color: white;
+}
+
+/*---- FOOTER ----*/
+#cl-footer{
+    display: none;
+}
+
+#tw-dsk{
+    display: none;
+}
+ 
+ #fa-dsk{
+    display: none;
+}
+ 
+ #in-dsk{
+    display: none;
+}
+
+.footer{
+    font-family: "Roboto", sans-serif;
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+
+#tw-mbl, #fa-mbl, #in-mbl{
+    padding-bottom: 10px;
+}
+
+#tw-mbl{
+    padding-left: 130px;
+}
+
+#fa-mbl{
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.footer p{
+    font-weight: bold;
+    color: #737373;
+    font-size: 0.90rem;
+    padding-left: 108px;
+}
+
+/*--------------- MOBILE • CONTACT ---------------*/
+.skip-links-contact{
+    display: none;
+}
+
+/*---- PAGE TITLE ----*/
+.title-contact{
+   text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.title-contact h3{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #737373;
+    padding-bottom: 20px;
+}
+
+.title-contact h1{
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: #252B42;
+    padding-bottom: 70px;
+}
+
+/*---- CONTACT FORM + BUTTON ----*/
+form{
+    width: 300px;
+    padding: 20px;
+    margin-left: 35px;
+    font-family: "Montserrat", sans-serif;
+}
+
+input[type="text"], input[type="email"], textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #252B42;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+form p{
+    padding-bottom: 5px;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #252B42;
+    text-align: center;
+}
+
+form button{
+    background-color: #FA4A0C;
+    margin-top: 10px;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    border-radius: 35px;
+}
+
+form button:hover{
+    background-color: #cf3904
+}
+
+@keyframes pulse{
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;      /* Here is the second required animation, using the 'animation' property. This animation works on both desktop and mobile versions of this site */
+    }                  /* This mobile version of the animation doesn't use the :hover state because I believe hover on mobile is just janky as is, and doesn't make much sense. */
+    100% {
+      opacity: 1;
+    }
+}
+
+#contact-button{
+    animation: pulse 1.9s infinite;
+}
+
+/*---- HERO BANNER ----*/
+.hero-contact2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #252B42;
+    flex-direction: column;
+    margin-top: 80px;
+    padding-bottom: 110px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero-contact2 h2{
+    padding-top: 110px;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: white;
+}
+
+.hero-contact2 h4{
+    padding-top: 30px;
+    font-weight: 450;
+    font-size: 1.5rem;
+    color: #737373;
+}
+
+/*--------------- MOBILE • FAQ ---------------*/
+.skip-links-faq{
+    display: none;
+}
+
+/*---- PAGE TITLE ----*/
+.title-faq{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.title-faq h3{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #737373;
+    padding-bottom: 20px;
+}
+
+.title-faq h1{
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: #252B42;
+    padding-bottom: 150px;
+}
+
+/*---- THE QUESTIONS ----*/
+.faq-1, .faq-2, .faq-3, .faq-4, .faq-5{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom:20px;
+}
+
+.faq-1 h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FA4A0C;
+    padding-bottom: 15px;
+}
+
+.faq-1 p{
+    
+    font-size: 1rem;
+    color: #252B42;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.faq-2 h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FA4A0C;
+    padding-bottom: 15px;
+}
+
+.faq-2 p{
+    
+    font-size: 1rem;
+    color: #252B42;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.faq-3 h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FA4A0C;
+    padding-bottom: 15px;
+}
+
+.faq-3 p{
+    font-size: 1rem;
+    color: #252B42;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.faq-4 h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FA4A0C;
+    padding-bottom: 15px;
+}
+
+.faq-4 p{
+    font-size: 1rem;
+    color: #252B42;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.faq-5 h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FA4A0C;
+    padding-bottom: 15px;
+}
+
+.faq-5 p{
+    font-size: 1rem;
+    color: #252B42;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/*---- HERO BANNER ----*/
+.hero-faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #252B42;
+    flex-direction: column;
+    margin-top: 80px;
+    padding-bottom: 110px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero-faq h2{
+    padding-top: 110px;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: white;
+}
+
+.hero-faq h4{
+    padding-top: 30px;
+    font-weight: 450;
+    font-size: 1.5rem;
+    color: #737373;
+}
+
+#herobutton-contact{
+    text-decoration: none;
+    color: #737373;
+}
+
+#herobutton-contact:hover{
+    text-decoration: underline;
+}
+
+.skip-link2{
+    display: none;
+}}
+
+
+
+
+@media only screen and (min-width:431px){ /*--------------- DESKTOP ---------------*/
+
+/*--------------- DESKTOP • HOME ---------------*/
+/*---- SKIP LINKS ----*/
+.skip-links-home a{
+    text-decoration: none;
+    color: #252B42;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: "Montserraf", sans-serif;
+}
+
+.skip-links-home a:hover{
+    text-decoration: underline;
+    color: darkcyan;
+}
+
+.skip-links-home li{
+    text-align: center;
+}
+
+.skip-links-home li:nth-child(1){
+    padding-bottom: 10px;
+}
+
+.skip-links-home{
+    position: relative;
+    top: 90px;
+    left: -275px;
+}
+
+/*---- CONTAINER, HEADER & NAV ----*/
+.container{
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+header{
+    height: 110px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 90px;
+    font-family: "Montserraf", sans-serif;
+}
+
+header li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 170px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+header a{
+    text-decoration: none;
+    color: #252B42;
+}
+
+header a:hover{
+    color: #FA4A0C;
+}
+
+nav{
+    margin-right: 80px;
+    padding-top: 105px;
+}
+
+#cl-dsk{
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    transform: scale(0.7);
+}
+
+#cl-mbl{
+    display: none;
+}
+
+/*---- HERO BANNER #1 ----*/
+#hero-image1{
+    position: absolute;
+    width: 100%;
+}
+
+.hero-home{
+    padding-top: 150px;
+    padding-left: 465px;
+    padding-right: 465px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero-home h3{
+    font-size: 1.6rem;
+    color: white;
+    padding-bottom: 150px;
+    font-weight: bold;
+}
+
+.hero-home h1{
+    font-weight: bold;
+    font-size: 6.25rem;
+    color: white;
+    padding-bottom: 80px;
+    line-height: 1.25;
+    font-family: "Poppins", sans-serif;    
+}
+
+.hero-home h4{
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 55px;
+}
+
+.button-hero1{
+    background-color: #FA4A0C;
+    border: none;
+    color: white;
+    padding: 30px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-radius: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.button-hero2{
+    background-color: #00000000; 
+    border: 1px solid;
+    color: white;
+    padding: 30px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#hero1-playstore, #hero1-appstore{
+    text-decoration: none;
+    color: white;
+}
+
+#hero-image2-dsk{
+    position: relative;
+    top: -410px;
+    left: 522px;
+    transform: scale(0.8);  
+}
+
+#hero-image2-mbl{
+    display: none;
+}
+
+/*---- HOW THE APP WORKS ----*/
+.how-it-works{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.how-it-works p{
+    font-weight: 600;
+    font-size: 44px;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.dsk-divider{
+    margin-top: -590px;
+    border-top: 4px solid #8c8b8b;
+    opacity: 20%;
+}
+
+.mbl-divider{
+    display: none;
+}
+
+/*---- CREATE AN ACCOUNT ----*/
+.create-account{
+    font-family: "Montserrat", sans-serif;
+}
+
+.create-account h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    color: #FA4A0C;
+}
+
+.create-account h2{
+    font-weight: bold;
+    font-size: 2.25rem;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    line-height: 1.5;
+    color: #252B42;
+}
+
+.create-account h4{
+    font-weight: 450;
+    font-size: 1.5rem;
+    padding-bottom: 40px;
+    color: #737373;
+    padding-right: 80px;
+    line-height: 1.5;
+}
+
+.create-account-txt{
+    padding-left: 500px;
+    padding-right: 500px;
+    position: relative;
+    top: 105px;
+    right: -300px;
+}
+
+.create-account img{
+    margin-top: -450px;
+    margin-left: 115px;
+}
+
+/*---- EXPLORE VARIETIES ----*/
+.explore-varieties{
+    font-family: "Montserrat", sans-serif;
+    margin-top: -100px;
+}
+
+.explore-varieties h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-bottom: 20px;
+    color: #FA4A0C;
+}
+
+.explore-varieties h2{
+    font-weight: bold;
+    font-size: 2.25rem;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    line-height: 1.5;
+    color: #252B42;
+}
+
+.explore-varieties h4{
+    font-weight: 450;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-bottom: 40px;
+    color: #737373;
+    padding-right: 80px;
+    line-height: 1.5;
+}
+
+.explore-varieties-txt{
+    padding-left: 500px;
+    padding-right: 500px;
+    position: relative;
+    top: 240px;
+    right: 280px;
+}
+
+.explore-varieties img{
+    margin-top: -300px;
+    margin-left: 905px;
+}
+
+/*---- CHECKOUT ----*/
+.checkout{
+    font-family: "Montserrat", sans-serif;
+    margin-top: -105px;
+}
+
+.checkout h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-bottom: 20px;
+    color: #FA4A0C;
+}
+
+.checkout h2{
+    font-weight: bold;
+    font-size: 2.25rem;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    line-height: 1.5;
+    color: #252B42;
+}
+
+.checkout h4{
+    font-weight: 450;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-bottom: 40px;
+    color: #737373;
+    padding-right: 80px;
+    line-height: 1.45;
+}
+
+.checkout-txt{
+    padding-left: 450px;
+    padding-right: 450px;
+    position: relative;
+    top: 310px;
+    right: -350px;
+}
+
+.checkout img{
+    margin-top: -235px;
+    margin-left: 115px;
+}
+
+/*---- HERO BANNER #2 ----*/
+#hero-image2{
+    width: 100%;
+    position: relative;
+    top: 60px;
+}
+
+.hero-home2{
+    text-align: center;
+    flex-direction: column;
+    margin-top: -620px;
+    padding-bottom: 294px;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    padding-top: 14px;
+}
+
+.hero-home2 h2{
+    padding-top: 125px;
+    padding-bottom: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 1.5;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: white;
+}
+
+.hero-home2 h4{
+    font-weight: 450;
+    font-size: 1.75rem;
+    align-items: center;
+    padding-bottom: 75px;
+    color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+    line-height: 1.5;
+}
+
+.button-hero3{
+    background-color: #FA4A0C;
+    border: none;
+    color: white;
+    padding: 29px 45px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button-hero4{
+    background-color: #00000000; 
+    border: 1px solid;
+    color: white;
+    padding: 28px 70px;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button-hero3:hover{
+    background-color: #cf3904;
+}
+
+#hero2-playstore, #hero2-appstore{
+    text-decoration: none;
+    color: white;
+}
+
+/*--------------- DESKTOP • CONTACT ---------------*/
+/*---- SKIP LINKS ----*/
+.skip-links-contact a{
+    text-decoration: none;
+    color: #252B42;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: "Montserraf", sans-serif;
+}
+
+.skip-links-contact a:hover{
+    text-decoration: underline;
+    color: darkcyan;
+}
+
+.skip-links-contact li{
+    text-align: center;
+}
+
+.skip-links-contact li:nth-child(1){
+    padding-bottom: 10px;
+}
+
+.skip-links-contact{
+    position: relative;
+    top: 90px;
+    left: -275px;
+}
+
+/*---- PAGE TITLE ----*/
+.title-contact{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 125px;
+}
+
+.title-contact h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #737373;
+    padding-bottom: 25px;
+    padding-top: 100px;
+}
+ 
+.title-contact h1{
+    font-weight: bold;
+    font-size: 4.25rem;
+    color: #252B42;
+    padding-bottom: 50px;
+}
+
+/*---- CONTACT FORM + BUTTON ----*/
+form{
+    margin: auto;
+    width: 600px;
+    font-family: "Montserrat", sans-serif;
+}
+ 
+input[type="text"], input[type="email"], textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 40px;
+    border: 1px solid #252B42;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+ 
+form p{
+    padding-bottom: 5px;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    color: #252B42;
+    text-align: center;
+}
+
+form button{
+    background-color: #FA4A0C;
+    margin-top: 10px;
+    padding: 20px 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    border-radius: 35px;
+    margin-left: 200px;
+}
+
+form button:hover{
+    background-color: #cf3904;
+}
+
+@keyframes pulse{
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;     /* Here is the second required animation, using the 'animation' property. This animation works on both desktop and mobile versions of this site */
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+#contact-button:hover{
+    animation: pulse 1.9s infinite;
+}
+ 
+/*---- HERO BANNER ----*/
+.hero-contact2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #252B42;
+    flex-direction: column;
+    margin-top: 80px;
+    padding-bottom: 110px;
+    margin-bottom: 55px;
+    font-family: "Montserrat", sans-serif;
+}
+ 
+.hero-contact2 h2{
+    padding-top: 110px;
+    font-weight: bold;
+    font-size: 3.25rem;
+    color: white;
+}
+ 
+.hero-contact2 h4{
+    padding-top: 30px;
+    font-weight: 450;
+    font-size: 1.5rem;
+    color: #737373;
+}
+
+/*--------------- DESKTOP • FAQ ---------------*/
+/*---- SKIP LINKS ----*/
+.skip-links-faq a{
+    text-decoration: none;
+    color: #252B42;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: "Montserraf", sans-serif;
+}
+
+.skip-links-faq a:hover{
+    text-decoration: underline;
+    color: darkcyan;
+}
+
+.skip-links-faq li{
+    text-align: center;
+}
+
+.skip-links-faq li:nth-child(1){
+    padding-bottom: 10px;
+}
+
+.skip-links-faq{
+    position: relative;
+    top: 90px;
+    left: -275px;
+}
+
+/*---- PAGE TITLE ----*/
+.title-faq{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.title-faq h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #737373;
+    padding-bottom: 25px;
+    padding-top: 100px;
+}
+
+.title-faq h1{
+    font-weight: bold;
+    font-size: 4.25rem;
+    color: #252B42;
+    padding-bottom: 150px;
+}
+
+/*---- QUESTIONS ----*/
+.faq-1, .faq-2, .faq-3, .faq-4, .faq-5{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 20px;
+}
+
+.faq-1 h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FA4A0C;
+    padding-bottom: 15px;
+}
+
+.faq-1 p{
+    font-size: 1rem;
+    color: #252B42;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.faq-2 h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FA4A0C;
+    padding-bottom: 15px;
+}
+
+.faq-2 p{
+    font-size: 1rem;
+    color: #252B42;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.faq-3 h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FA4A0C;
+    padding-bottom: 15px;
+}
+
+.faq-3 p{
+    font-size: 1rem;
+    color: #252B42;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.faq-4 h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FA4A0C;
+    padding-bottom: 15px;
+}
+
+.faq-4 p{
+    font-size: 1rem;
+    color: #252B42;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.faq-5 h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FA4A0C;
+    padding-bottom: 15px;
+}
+
+.faq-5 p{
+    font-size: 1rem;
+    color: #252B42;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/*---- HERO BANNER ----*/
+.hero-faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #252B42;
+    flex-direction: column;
+    margin-top: 80px;
+    padding-bottom: 110px;
+    margin-bottom: 55px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero-faq h2{
+    padding-top: 110px;
+    font-weight: bold;
+    font-size: 3.25rem;
+    color: white;
+}
+
+.hero-faq h4{
+    padding-top: 30px;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #737373;
+}
+
+#herobutton-contact{
+    text-decoration: none;
+    color: #737373;
+}
+
+#herobutton-contact:hover{
+    text-decoration: underline;
+}
+
+/*---- FOOTER ----*/
+#tw-mbl, #in-mbl, #fa-mbl{
+    display: none;
+}
+
+#tw-dsk, #in-dsk, #fa-dsk{
+    position: relative;
+    top: -5px;
+    right: -190px;
+}
+
+.footer{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cl-footer{
+    position: relative;
+    right: 50px;
+    top: -25px;
+    transform: scale(0.6);
+}
+
+#tw-dsk{
+    padding-left: 210px;
+    padding-right: 30px;
+}
+
+#fa-dsk{
+    padding-left: 15px;
+    padding-right: 50px;
+}
+
+.footer p{
+    font-weight: bold;
+    color: #737373;
+    font-size: 1.1rem;
+    padding-left: 690px;
+}
+
+.skip-link2 a{
+    text-decoration: none;
+    color: #252B42;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.skip-link2 a:hover{
+    text-decoration: underline;
+    color: darkcyan;
+    
+}
+
+.skip-link2 li{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    right: 260px;
+    top: -30px;
+    padding-top: 15px;
+}}
